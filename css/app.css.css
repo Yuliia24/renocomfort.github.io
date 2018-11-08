@@ -9,9 +9,13 @@ body {
 }
 header {
 	padding: 30px 0 25px;
-	background-color: black;
 	margin: 0 auto;
 	border-bottom: 1px solid #da1b2f;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 2;
 
 }
 .header__block {
@@ -55,10 +59,12 @@ header {
 .btn img{
 	padding-right: 13px;
 }
-
-<!-- -->
 .navigation {
-	background-color: #0f0f0f;
+	position: absolute;
+	top: 102px;
+	left: 0;
+	width: 100%;
+	z-index: 2;
 }
 
 .nav ul {
@@ -80,10 +86,94 @@ header {
 	display: flex;
 	align-items: center;
 	background-image: url("../img/intro_bg.png");
+	position: relative;
 }
-
-
-
+.intro__title {
+	width: 100%;
+	display: flex;
+	align-items: center;
+}
+.intro__title h1 {
+	font-size: 64px;
+	font-weight: 700;
+	text-transform: uppercase;
+	padding-top: 60px;
+	text-align: center;
+	color: #fff;
+}
+.intro__title p {
+	font-size: 20px;
+	font-weight: 700;
+	padding-top: 40px;
+	text-align: center;
+	color: #fff;
+}
+.intro__title img {
+	position: relative;
+	left: 50%;
+	transform: translate(-50%);
+}
+.intro__container {
+	position: absolute;
+	bottom: -10px;
+	width: 100%;
+}
+.intro__block {
+	display: flex;
+	background: rgba(42, 40, 42, 0.7);
+	padding: 25px 22px 20px;
+	align-items: center;
+	border-bottom: 10px solid #e71d32;
+}
+.intro__block p {
+	font-size: 25px;
+	font-weight: 700;
+	text-align: left;
+	color: #fff;
+	text-transform: uppercase;
+	padding-left: 35px;
+}
+.offer__title {
+	width: 100%;
+	display: flex;
+	align-items: center;
+}
+.offer__title h1 {
+	font-size: 45px;
+	font-weight: 700;
+	text-transform: uppercase;
+	padding-top: 60px;
+	text-align: center;
+	color: #3c4646;
+}
+.offer__title p {
+	font-size: 20px;
+	font-weight: 700;
+	padding: 40px 35px;
+	text-align: center;
+	color: #aeaeae;
+}
+.offer__block p {
+	font-size: 16px;
+	font-weight: 700;
+	text-decoration: none;
+	color: #575757;
+	text-align: center;
+}
+.offer__block img {
+	padding-top: 40px;
+	width: 255px;
+	height: 180px;
+}
+.offer__more {
+	padding: 70px;
+	text-align: center;
+}
+.offer__more a {
+	color: #e8182b;
+	font-size: 20px;
+	font-weight: 700;
+}
 
 
 
