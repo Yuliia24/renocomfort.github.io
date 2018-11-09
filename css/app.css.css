@@ -137,14 +137,24 @@ header {
 	width: 100%;
 	display: flex;
 	align-items: center;
+	position: relative;
 }
-.offer__title h1 {
+.offer__title::before {
+	content: "";
+	height: 1px;
+	width: 100%;
+	background-color: #119784;
+	position: absolute;
+	top: 115px;
+}
+.offer__title h2 {
 	font-size: 45px;
 	font-weight: 700;
 	text-transform: uppercase;
-	padding-top: 60px;
+	padding: 60px 40px 0;
 	text-align: center;
 	color: #3c4646;
+	background-color: #fff;
 }
 .offer__title p {
 	font-size: 20px;
