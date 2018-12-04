@@ -99,7 +99,6 @@ header {
 	font-weight: 700;
 	text-transform: uppercase;
 	padding-top: 60px;
-	text-align: center;
 	color: #fff;
 }
 .intro__title p {
@@ -108,10 +107,12 @@ header {
 	padding-top: 40px;
 	text-align: center;
 	color: #fff;
+	width: 78%;
+    padding-left: 79px;
 }
 .intro__title img {
 	position: relative;
-	left: 50%;
+	left: 46%;
 	transform: translate(-50%);
 }
 .intro__container {
@@ -180,6 +181,9 @@ header {
 	left: 50%;
 	transform: translate(-50%);
 }
+.offer__block p:hover {
+	color: #e71d32;
+}
 .offer__block a {
 	text-decoration: none;
 }
@@ -229,7 +233,7 @@ header {
 	position: relative;
 }
 .works__block--1 {
-	top: 15px;
+	top: 16px;
     left: -35px;
 }
 .works__block--2 {
@@ -253,6 +257,9 @@ header {
 	text-align: left;
 	padding-right: 25px;
 	padding-left: 7px;
+}
+.realization {
+	padding-bottom: 50px;
 }
 .realization__title {
 	width: 100%;
@@ -330,6 +337,7 @@ header {
 	font-size: 18px;
 	font-weight: 700;
 	padding-top: 25px;
+	width: 86%;
 }
 .realization__more {
 	text-align: center;
@@ -350,6 +358,7 @@ header {
 }
 .comments {
 	padding-bottom: 150px;
+	padding-top: 70px;
 	background-color: rgba(255, 255, 255, 0.5);
 	border-bottom: 1px solid #119784;
 }
@@ -357,8 +366,6 @@ header {
 	width: 100%;
 	align-items: center;
 	position: relative;
-	padding-top: 90px;
-
 }
 .comments__title::before {
 	content: "";
@@ -366,7 +373,7 @@ header {
 	width: 100%;
 	background-color: #119784;
 	position: absolute;
-	top: 110px;
+	top: 25px;
 }
 .comments__title h2 {
 	font-size: 45px;
@@ -390,8 +397,12 @@ header {
 	color: #aeaeae;
 }
 .comments__block {
-	background-color: #f4f6f7;
+	background-color: #f3f5f6;
 	padding: 35px 30px;
+	width: 77%;
+}
+.comments__block:hover {
+	background-color: #ecf0f2;
 }
 .comments__block .fa {
 	color: #e8182b;
@@ -424,8 +435,9 @@ header {
 	background-image: url("../img/info_block.png");
 	background-repeat: no-repeat;
 	background-size: cover;
+	padding-bottom: 100px;
 }
-.info__container {
+.info__question {
 	border-radius: 3px;
 	background: #1d9b8a;
 	padding: 15px 15px 20px 33px;
@@ -435,30 +447,30 @@ header {
 	position: relative;
 	top: -50px;
 }
-.info__container p {
+.info__question p {
 	color: #ffffff;
 	font-size: 26px;
 	font-weight: 700;
 }
-.info__container img {
+.info__question img {
 	padding-right: 15px;
 	
 }
-.info__tel {
+.info__question__tel {
 	position: relative;
 }
-.info__tel i {
+.info__question__tel i {
 	color: #e8182b;
 	font-size: 25px;
 }
-.info__tel button {
+.info__question__tel button {
 	position: absolute;
     right: 15px;
     bottom: 21px;
     background-color: #fff;
 	border: none;
 }
-.info__tel input {
+.info__question__tel input {
 	width: 490px;
 	height: 60px;
 	border-radius: 8px;
@@ -467,7 +479,7 @@ header {
 	padding-left: 25px;
 	box-sizing: border-box;
 }
-.info__tel input::placeholder {
+.info__question__tel input::placeholder {
 	color: #c1c1c1;
 }
 .info__block__text a:last-child {
@@ -479,38 +491,41 @@ header {
 }
 .info__block__text a:first-child {
 	color: #3c4646;
-	font-size: 26px;
+	font-size: 20px;
 	font-weight: 700;
 	display: block;
 	text-decoration: none;
+	padding-bottom: 13px;
 }
-.info__content {
+.info__communication {
 	display: table;
+	padding-left: 35px;
 }
-.info__content__img {
-	padding-bottom: 18px;
+.info__communication__img {
+	padding-bottom: 15px;
 }
 .info__block__text {
-	padding: 17px;
+	padding-left: 17px;
 }
 .info__block {
-	padding: 22px 0px 30px;
+	padding: 30px 0;
 	display: flex;
 	align-items: center;
 }
 .info__block:nth-child(2) {
 	border-bottom: 1px solid #1d9b8a;
 }
-.info__content__social {
+.info__communication__social {
 	padding-left: 50px;
-	
+	padding-top: 10px;
 }
-.info__content__social a {
+.info__communication__social a {
 	color: #aeaeae;
 	text-decoration: none;
 	font-size: 20px;
 }
 .info__form input {
+	font-family: 'Ubuntu', sans-serif;
 	width: 100%;
 	padding: 25px;
 	font-size: 16px;
@@ -527,6 +542,7 @@ header {
 	color: #aeaeae;
 }
 .info__form textarea {
+	font-family: 'Ubuntu', sans-serif;
 	font-size: 16px;
 	font-weight: 700;
 	color: #aeaeae;
@@ -538,6 +554,7 @@ header {
 	border-radius: 3px;
 	border: 1px solid #ecf0f2;
 	text-transform: uppercase;
+	resize: none;
 }
 .info__form button {
 	background-color: #e12436;
